@@ -9,7 +9,7 @@ export default function MarketingPage() {
     <div className="bg-black h-screen px-6 md:px-24 text-white">
       <nav className="h-16 flex items-center justify-between">
         <div className="flex items-center justify-center gap-x-2">
-          <Logo />
+          <Logo href="/" />
         </div>
         <div className="items-center justify-center gap-x-9 hidden md:flex font-medium">
           {/* TODO: Tooltip on hover? Is it worth doing? */}
