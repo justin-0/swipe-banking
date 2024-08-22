@@ -16,10 +16,7 @@ export default function MarketingPage() {
           <Image src="./logo.svg" alt="logo" width={40} height={50} />
         </div>
         <div className="items-center justify-center gap-x-9 hidden md:flex font-medium">
-          {/* <Link href="/sign-in" className="flex items-center justify-center">
-            <Fingerprint className="h-4 w-4 mr-2" />
-            Login
-          </Link> */}
+          {/* TODO: Tooltip on hover? Is it worth doing? */}
           <NavAuthItem href="sign-in" label="Login" icon={Fingerprint} />
           <NavAuthItem
             href="sign-up"

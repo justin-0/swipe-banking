@@ -6,9 +6,10 @@ Idea has come from <www.fey.com> who have a really nice looking financial saas
 
 ## Frontend - Next.js
 
-- [] Switzer Font, Next/Local/Fonts
-- [] Prettier, Tailwind Prettier, Trivago Import Order
-- [] Metadata template to update dynamically
+- [x] Switzer Font, Next/Local/Fonts
+- [x] Prettier, Tailwind Prettier, Trivago Import Order
+- [x] Metadata template to update dynamically
+- [x] Simple Landing Page
 - [] Clerk Auth
 - [] Protect Dashboard / Platform route - Using Middleware
 - [] Public - Landing, Sign-in & Sign-up
