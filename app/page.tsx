@@ -1,6 +1,4 @@
 import { Fingerprint, KeyRound } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
 
 import { Logo } from "@/components/logo";
 import { NavAuthItem } from "@/components/nav-auth-item";
@@ -11,10 +9,6 @@ export default function MarketingPage() {
     <div className="bg-black h-screen px-6 md:px-24 text-white">
       <nav className="h-16 flex items-center justify-between">
         <div className="flex items-center justify-center gap-x-2">
-          {/* <Image src="./logo.svg" alt="logo" width={40} height={50} />
-          <Link href="/" className="text-xl">
-            swipe
-          </Link> */}
           <Logo />
         </div>
         <div className="items-center justify-center gap-x-9 hidden md:flex font-medium">

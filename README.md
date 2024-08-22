@@ -16,9 +16,16 @@ Idea has come from <www.fey.com> who have a really nice looking financial saas
 - [x] Style auth layout - consider mobile and larger screens - look at other apps sign up flows
 - [x] Create loader skeleton for auth components using clerk loading and loaded wrappers
 
+## Navbar
+
+- [] Create config for navbar routes - label, href
+- [] Create nav bar item
+- [] navbar component
+- [] update logo to accept props to change href - will navigate to dashboard home
+
 ## Server - Hono
 
-- [] Install Hono
-- [] Vercel Getting Started in Docs
-- [] Hono RPC with Zod Validator
-- [] Clerk middleare for auth protection
+- [x] Install Hono
+- [x] Vercel Getting Started in Docs
+- [x] Hono RPC with Zod Validator
+- [x] Clerk middleare for auth protection
