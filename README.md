@@ -10,9 +10,9 @@ Idea has come from <www.fey.com> who have a really nice looking financial saas
 - [x] Prettier, Tailwind Prettier, Trivago Import Order
 - [x] Metadata template to update dynamically
 - [x] Simple Landing Page
-- [] Clerk Auth
-- [] Protect Dashboard / Platform route - Using Middleware
-- [] Public - Landing, Sign-in & Sign-up
+- [x] Clerk Auth
+- [x] Protect Dashboard / Platform route - Using Middleware
+- [x] Public - Landing, Sign-in & Sign-up
 - [] Style auth layout - consider mobile and larger screens - look at other apps sign up flows
 - [] Create loader skeleton for auth components using clerk loading and loaded wrappers
 
