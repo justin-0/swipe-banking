@@ -1,9 +1,13 @@
 import { ClerkLoaded, ClerkLoading, SignIn } from "@clerk/nextjs";
 
+import { AuthSkeleton } from "@/components/skeletons/auth-skeleton";
+
 export default function Page() {
   return (
     <>
-      <ClerkLoading>Loading</ClerkLoading>
+      <ClerkLoading>
+        <AuthSkeleton />
+      </ClerkLoading>
       <ClerkLoaded>
         <SignIn />
       </ClerkLoaded>

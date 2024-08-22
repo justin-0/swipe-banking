@@ -14,7 +14,7 @@ Idea has come from <www.fey.com> who have a really nice looking financial saas
 - [x] Protect Dashboard / Platform route - Using Middleware
 - [x] Public - Landing, Sign-in & Sign-up
 - [x] Style auth layout - consider mobile and larger screens - look at other apps sign up flows
-- [] Create loader skeleton for auth components using clerk loading and loaded wrappers
+- [x] Create loader skeleton for auth components using clerk loading and loaded wrappers
 
 ## Server - Hono
 
