@@ -16,12 +16,18 @@ Idea has come from <www.fey.com> who have a really nice looking financial saas
 - [x] Style auth layout - consider mobile and larger screens - look at other apps sign up flows
 - [x] Create loader skeleton for auth components using clerk loading and loaded wrappers
 
-## Navbar
+### Header - Dashboard Layout
 
-- [] Create config for navbar routes - label, href
-- [] Create nav bar item
-- [] navbar component
-- [] update logo to accept props to change href - will navigate to dashboard home
+- [] Logo
+- [] Navigation
+- [] Create config for nav routes - overview, transactions, accounts, categories, settings
+- [] use pathname hook in navigation and pass as a prop to item when href and path are equal
+- [] Navigation Item - rendered from routes config - styled based on current pathname
+- [] use cn from libs to style based on active prop
+- [] shadcn sheet to create mobile lib - beware of hydration error
+- [] sheet will not close when we click on a link, we need to control this for better ux
+- [] add clerk user button to header so users can logout, there will be a delay so use loading like auth pages
+- [] welcome message component to greet users, useUser hook from clerk
 
 ## Server - Hono
 
