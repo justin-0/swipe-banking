@@ -8,14 +8,7 @@ import { useEffect, useState } from "react";
 import { NavItem } from "./nav-item";
 
 import { Button } from "@/components/ui/button";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const NavigationItems: MainNav = [
   {
@@ -72,12 +65,9 @@ export const MobileNav = () => {
   }
 
   return (
-    <Sheet
-      open={sheetOpen}
-      onOpenChange={(sheetOpen) => setSheetOpen((prev) => !prev)}
-    >
+    <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
       <SheetTrigger className="text-white">
-        <Button size="icon" variant="link">
+        <Button size="icon" variant="link" asChild>
           <MenuIcon className="size-6 text-white" />
         </Button>
       </SheetTrigger>
