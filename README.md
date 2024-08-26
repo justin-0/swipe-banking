@@ -18,9 +18,9 @@ Idea has come from <www.fey.com> who have a really nice looking financial saas
 
 ### Header - Dashboard Layout
 
-- [] Logo
+- [x] Logo
 - [] Navigation
-- [] Create config for nav routes - overview, transactions, accounts, categories, settings
+- [x] Create config for nav routes - overview, transactions, accounts, categories, settings
 - [] use pathname hook in navigation and pass as a prop to item when href and path are equal
 - [] Navigation Item - rendered from routes config - styled based on current pathname
 - [] use cn from libs to style based on active prop
