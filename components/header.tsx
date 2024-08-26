@@ -3,10 +3,11 @@ import { Loader2 } from "lucide-react";
 
 import { Logo } from "./logo";
 import { MobileNav, Navigation } from "./navigation";
+import { WelcomeHeading } from "./welcome-heading";
 
 export const Header = () => {
   return (
-    <header className="bg-zinc-950/90 px-6 py-5 text-white md:px-24">
+    <header className="bg-zinc-950/90 px-6 py-5 pb-16 text-white md:px-24 lg:pb-28">
       <nav className="flex items-center justify-between">
         {/* logo, navigation and mobile menu */}
         <div className="flex items-center justify-center gap-x-24">
@@ -31,7 +32,9 @@ export const Header = () => {
           </ClerkLoaded>
         </div>
       </nav>
-      <div>welcome message</div>
+      <div className="mt-14 lg:mt-24">
+        <WelcomeHeading />
+      </div>
     </header>
   );
 };

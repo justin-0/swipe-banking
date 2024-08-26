@@ -67,8 +67,8 @@ export const MobileNav = () => {
   return (
     <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
       <SheetTrigger className="text-white">
-        <Button size="icon" variant="link" asChild>
-          <MenuIcon className="size-6 text-white" />
+        <Button size="icon" variant="link" asChild className="size-6">
+          <MenuIcon className="text-white" />
         </Button>
       </SheetTrigger>
       <SheetContent className="w-[400px] bg-black sm:w-[540px]" side="left">
