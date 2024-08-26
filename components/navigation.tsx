@@ -1,10 +1,21 @@
 "use client";
 
 import { type MainNav } from "@/config/main-nav";
-import { cn } from "@/lib/utils";
-import { usePathname } from "next/navigation";
+import { MenuIcon } from "lucide-react";
+import { usePathname, useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 
 import { NavItem } from "./nav-item";
+
+import { Button } from "@/components/ui/button";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 const NavigationItems: MainNav = [
   {
@@ -43,5 +54,49 @@ export const Navigation = () => {
         />
       ))}
     </>
+  );
+};
+
+// TODO: Mobile nav with sheet component from shadcn ui
+export const MobileNav = () => {
+  const [isClient, setIsClient] = useState(false);
+  const [sheetOpen, setSheetOpen] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return null;
+  }
+
+  return (
+    <Sheet
+      open={sheetOpen}
+      onOpenChange={(sheetOpen) => setSheetOpen((prev) => !prev)}
+    >
+      <SheetTrigger className="text-white">
+        <Button size="icon" variant="link">
+          <MenuIcon className="size-6 text-white" />
+        </Button>
+      </SheetTrigger>
+      <SheetContent className="w-[400px] bg-black sm:w-[540px]" side="left">
+        <div className="flex flex-col justify-start gap-y-4 text-white">
+          {NavigationItems.map((item) => (
+            <NavItem
+              label={item.label}
+              href={item.href}
+              key={item.href}
+              isActive={pathname === item.href}
+              onClick={() => {
+                setSheetOpen(false);
+                router.push(item.href);
+              }}
+            />
+          ))}
+        </div>
+      </SheetContent>
+    </Sheet>
   );
 };

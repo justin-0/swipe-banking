@@ -20,7 +20,7 @@ export const NavAuthItem = ({
       href={`/${href}`}
       className={cn("flex items-center justify-center", className)}
     >
-      <Icon className="h-4 w-4 mr-2" />
+      <Icon className="mr-2 h-4 w-4" />
       {label}
     </Link>
   );

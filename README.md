@@ -19,14 +19,14 @@ Idea has come from <www.fey.com> who have a really nice looking financial saas
 ### Header - Dashboard Layout
 
 - [x] Logo
-- [] Navigation
+- [x] Navigation
 - [x] Create config for nav routes - overview, transactions, accounts, categories, settings
-- [] use pathname hook in navigation and pass as a prop to item when href and path are equal
-- [] Navigation Item - rendered from routes config - styled based on current pathname
-- [] use cn from libs to style based on active prop
-- [] shadcn sheet to create mobile lib - beware of hydration error
-- [] sheet will not close when we click on a link, we need to control this for better ux
-- [] add clerk user button to header so users can logout, there will be a delay so use loading like auth pages
+- [x] use pathname hook in navigation and pass as a prop to item when href and path are equal
+- [x] Navigation Item - rendered from routes config - styled based on current pathname
+- [x] use cn from libs to style based on active prop
+- [x] shadcn sheet to create mobile lib - beware of hydration error
+- [x] sheet will not close when we click on a link, we need to control this for better ux
+- [x] add clerk user button to header so users can logout, there will be a delay so use loading like auth pages
 - [] welcome message component to greet users, useUser hook from clerk
 
 ## Server - Hono

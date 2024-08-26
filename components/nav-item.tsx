@@ -6,11 +6,16 @@ type NavItemProps = {
   isActive: boolean;
   href: string;
   label: string;
+  onClick?: () => void;
 };
 
-export const NavItem = ({ href, label, isActive }: NavItemProps) => {
+export const NavItem = ({ href, label, isActive, onClick }: NavItemProps) => {
   return (
-    <Link href={href} className={cn(isActive && "font-bold transition")}>
+    <Link
+      href={href}
+      className={cn(isActive && "font-bold transition")}
+      onClick={onClick}
+    >
       {label}
     </Link>
   );
